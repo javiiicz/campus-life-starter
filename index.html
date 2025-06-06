@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Campus Life</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header id="banner">
@@ -10,62 +11,63 @@
         </header>
         
         <nav id="navigation">
-            <ul>
-                <li><a href="#student-orgs">Student Organizations</a></li>
-                <li><a href="#events">Upcoming Events</a></li>
-                <li><a href="#news">Capus News</a></li>
+            <ul id="links">
+                <li><a href="#student-orgs"><p class="navlink">Student Organizations</p></a></li>
+                <li><a href="#events"><p class="navlink">Upcoming Events</p></a></li>
+                <li><a href="#news"><p class="navlink">Campus News</p></a></li>
+                <li><a href="#miami-events"><p class="navlink">Miami Events</p></a></li>
             </ul>
         </nav>
 
         <section id="sudent-orgs">
-            <h2>Student Organization</h2>
+            <h2>Student Organizations</h2>
             <p>Get to know the different groups on campus and find your place!</p>
 
-            <article>
-                <img src="./assets/katanpic.webp" width="300px" alt="Five club members posing for a photo">
-                <h3>Kappa Theta Pi Professional Fraternity</h3>
-                <p>The largest tech community on campus. This club organizes a bunch of social, professional and technical events throughout the year.</p>
-            </article>
-
-            <article>
-                <img src="./assets/tennis.jpg" width="300px" alt="A woman getting ready to hit a tennis ball">
-                <h3>Club Tennis</h3>
-                <p>Tennis club open for all! There is a recreational and competitive group to welcome all skill levels.</p>
-            </article>
-
-            <article>
-                <img src="./assets/coiso.jpg" width="300px" alt="A group of multicultural students holding different country flags and a big COISO banner">
-                <h3>Council of International Students and Organizations</h3>
-                <p>All University of Miami international students are automatically members of COISO. By participating in COISO meetings and events, you will get to know international students from over 110 countries and ensure that COISO provides the type of services and activities that meet your needs and interests as an international student at UM.</p>
-            </article>
+            <div class="org-container">
+                <article class="org">
+                    <img src="./assets/katanpic.webp" width="300px" alt="Five club members posing for a photo">
+                    <h3>Kappa Theta Pi Professional Fraternity</h3>
+                    <p>The largest tech community on campus. This club organizes a bunch of social, professional and technical events throughout the year.</p>
+                </article>
+                <article class="org">
+                    <img src="./assets/tennis.jpg" width="300px" alt="A woman getting ready to hit a tennis ball">
+                    <h3>Club Tennis</h3>
+                    <p>Tennis club open for all! There is a recreational and competitive group to welcome all skill levels.</p>
+                </article>
+                <article class="org">
+                    <img src="./assets/coiso.jpg" width="300px" alt="A group of multicultural students holding different country flags and a big COISO banner">
+                    <h3>Council of International Students and Organizations</h3>
+                    <p>All University of Miami international students are automatically members of COISO. By participating in COISO meetings and events, you will get to know international students from over 110 countries and ensure that COISO provides the type of services and activities that meet your needs and interests as an international student at UM.</p>
+                </article>
+            </div>
         </section>
 
         <section id="events">
             <h2>Upcoming Events</h2>
 
-            <article>
-                <img src="./assets/law.jpg" width="200px" alt="A panoramic view of the Miami law campus">
-                <a href="https://events.miami.edu/event/miami-law-campus-tours-fridays-on-the-bricks-2575"><h3>Miami Law Campus Tours - Fridays on the Bricks</h3></a>
-                <p>Friday, June 6th</p>
-                <p>12pm tp 1:30pm</p>
-                <p>Hilaire Bass Bricks</p>
-            </article>
-
-            <article>
-                <img src="./assets/sunday-movies.jpg" width="200px" alt="A woman in front of the mirror getting her makeup done">
-                <a href="https://events.miami.edu/event/sundays-at-the-u-with-movies-irma-vep-1996"><h3>Sundays at the U with Movies: "Irma Vep" (1996)</h3></a>
-                <p>Sunday, June 8th</p>
-                <p>1pm to 3pm</p>
-                <p>Bill Cosford Cinema</p>
-            </article>
-
-            <article>
-                <img src="./assets/youth.jpg" width="200px" alt="A flyer for the Summer Youth Camp">
-                <a href="https://events.miami.edu/event/u-soccer-camp"><h3>U Soccer Camp</h3></a>
-                <p>Monday, June 9th</p>
-                <p>9am to 5pm</p>
-                <p>Intramural Fields</p>
-            </article>
+            <div class="event-container">
+                <article class="event">
+                    <img src="./assets/law.jpg" width="200px" alt="A panoramic view of the Miami law campus">
+                    <a href="https://events.miami.edu/event/miami-law-campus-tours-fridays-on-the-bricks-2575"><h3>Miami Law Campus Tours - Fridays on the Bricks</h3></a>
+                    <p>Friday, June 6th</p>
+                    <p>12pm tp 1:30pm</p>
+                    <p>Hilaire Bass Bricks</p>
+                </article>
+                <article class="event">
+                    <img src="./assets/sunday-movies.jpg" width="200px" alt="A woman in front of the mirror getting her makeup done">
+                    <a href="https://events.miami.edu/event/sundays-at-the-u-with-movies-irma-vep-1996"><h3>Sundays at the U with Movies: "Irma Vep" (1996)</h3></a>
+                    <p>Sunday, June 8th</p>
+                    <p>1pm to 3pm</p>
+                    <p>Bill Cosford Cinema</p>
+                </article>
+                <article class="event">
+                    <img src="./assets/youth.jpg" width="200px" alt="A flyer for the Summer Youth Camp">
+                    <a href="https://events.miami.edu/event/u-soccer-camp"><h3>U Soccer Camp</h3></a>
+                    <p>Monday, June 9th</p>
+                    <p>9am to 5pm</p>
+                    <p>Intramural Fields</p>
+                </article>
+            </div>
         </section>
 
         <section id="news">
@@ -99,38 +101,30 @@
             
         </section>
 
-        <section>
+        <section id="miami-events">
             <h2>Miami-wide Events</h2>
             
             <article>
                 <h3>Miami Open</h3>
-                <img>
-                <p>Tiny Desc</p>
+                <img src="./assets/open.jpg" width="200px" alt="A tennis match at Hard Rock Stadium">
+                <p>An annual professional tennis tournament held in Miami Gardens, Florida, at Hard Rock Stadium</p>
                 <p>Early March</p>
             </article>
 
             <article>
-                <h3>Art Basel</h3>
-                <img>
-                <p>Tiny Desc</p>
-                <p>December</p>
-            </article>
-
-            <article>
-                <h3>Jazz in The Gardens</h3>
-                <img>
-                <p>Tiny Desc</p>
-                <p>December</p>
-            </article>
-
-            <article>
                 <h3>Ultra Festival</h3>
-                <img>
-                <p>Tiny Desc</p>
-                <p>March</p>
+                <img src="./assets/ultra.jpg" width="200px" alt="Stage view of Ultra Festival with a huge audience">
+                <p>The world's premier electronic music festival, boasting elite DJs and unparalleled production located in the beautiful city of Miami.</p>
+                <p>April</p>
             </article>
 
-            
+            <article>
+                <h3>Art Basel</h3>
+                <img src="./assets/art.jpg" width="200px" alt="A sculpture at a museum with two women talking on the side">
+                <p>Art Basel is a for-profit, privately owned and managed, international art fair staged annually in Basel (Switzerland), Miami Beach (US), Hong Kong and Paris.</p>
+                <p>December</p>
+            </article>
+
         </section>
     </body>
 </html>
